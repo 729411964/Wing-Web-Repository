@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../plugins/jquery/jquery-1.9.1.min.js"></script>
+    <script src="../../plugins/handlebars/handlebars.js"></script>
+    <!--<script src="demo.js"></script>-->
+    <style>
+        #demo {
+            width: 400px;
+            list-style: none;
+
+        }
+        .my {
+            width: 400px;
+        }
+    </style>
+
+</head>
+<body>
+<ul id="demo">
+
+</ul>
+
+<div id="myUL">
+
+</div>
+<script id="wing" type="text/x-handlebars-template">
+
+    //each 块级helper
+    {{!each 块级helper}}
+
+    {{#each student}}
+        <li>{{name}}</li>
+        <li>{{sexSwitch sex}}</li>
+        <li>{{age}}</li>
+        {{#compare age 20}}
+            <li>{{doc}}</li>
+        {{else}}
+            <li>{{{doc}}}</li>
+        {{/compare}}
+    {{/each}}
+
+    {{#each person}}
+        <li>{{this}}</li>
+    {{/each}}
+
+
+</script>
+
+ <!--自定义 helper 产生个数可以改变的ul  -->
+
+<script id="Assassin" type="text/x-handlebars-template">
+    //自定义 helper 产生个数可以改变的ul
+    <ul class="my">
+        {{#initUL data}}
+        {{this}}
+        {{log this}}
+        {{/initUL}}
+        <li>{{de}}</li>
+        <li>没有被括号括起来</li>
+        <li>{{container.name}}</li>
+        {{container.sex}}
+        {{initul de}}
+        <!--<li>{{initul de}}</li>-->
+
+    </ul>
+
+</script>
+
+
+
+</body>
+<script>
+    $(function () {
+        // //each 块级helper
+        (function ($) {
+            var myTemplate = Handlebars.compile($("#wing").html());
+            var content = {
+                student: [
+                    {
+                        name: "wing",
+                        sex: "boy",
+                        doc: "<a href='#'>chaolianie</a>"
+                    },
+                    {
+                        name: "wing1",
+                        sex: "boy",
+                        age: 202,
+                        doc: "<a href='#'>chaolianie</a>"
+
+                    },
+                    {
+                        name: "wing2",
+                        sex: "boy",
+                        age: 203,
+                        doc: "<a href='#'>chaolianie</a>"
+                    }
+                ],
+                person: ["hj", "ui", "po"]
+            };
+            Handlebars.registerHelper("compare", function (age, age1, options) {
+                console.log(options);
+                if (age > age1) {
+                    return options.fn(this);
+                } else {
+                    return options.inverse(this);
+                }
+            });
+
+            Handlebars.registerHelper("sexSwitch", function (value) {
+                if (value === "body") {
+                    return "男";
+                } else {
+                    return "女"
+                }
+            });
+            $("#demo").html(myTemplate(content));
+
+        })(jQuery);
+
+        (function($){
+            var myTemplate =Handlebars.compile($("#Assassin").html());
+            var content={
+                data:{
+                    myClass:"wing",
+                    myContent:"li标签"
+
+                },
+                de:"sdsdsd",
+                container:{
+                    name:"name",
+                    sex:"sex",
+                    age:"20"
+                }
+            }
+
+            Handlebars.registerHelper("initUL",function(data ,options){
+                var myClass=data.myClass;
+                var myContent=data.myContent;
+                var content="";
+                console.log(this);
+                console.log(options.fn);
+                for(i=0 ; i<10; i++){
+                    console.log("执行了循环"+this.data.myClass);
+                    content=content+"<li class="+options.fn(myClass)+">"+options.fn(myContent)+"</li>"
+                }
+                return content;
+
+            });
+            Handlebars.registerHelper("initul",function(item){
+//                return "<li>"+options.fn("德玛西亚")+"</li>";
+//                return "<li>"+"德玛西亚"+"</li>";
+                return new Handlebars.SafeString("<li>"+"德玛西亚"+"</li>");
+            });
+
+            $("#myUL").html(myTemplate(content));
+
+        })(jQuery);
+
+
+    });
+
+
+
+</script>
+</html>
