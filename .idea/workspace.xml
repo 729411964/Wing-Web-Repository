@@ -2,7 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa991f2e-5268-40d1-ad56-7850b61384ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Demo-js/Demo-handlebars.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/diy/1_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/diy/1_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/diy/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/diy/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/diy/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/diy/5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/diy/6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/diy/7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/diy/8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/diy/9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/line_conn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/line_conn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/metro.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/img/metro.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/js/jquery-1.4.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/js/jquery-1.9.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/js/jquery.ztree.all-3.5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/js/jquery.ztree.all-3.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/js/jquery.ztree.core-3.5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/js/jquery.ztree.core-3.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/js/jquery.ztree.excheck-3.5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/js/jquery.ztree.excheck-3.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/js/jquery.ztree.exedit-3.5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/js/jquery.ztree.exedit-3.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/js/jquery.ztree.exhide-3.5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/js/jquery.ztree.exhide-3.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/zTree/css/zTreeStyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Demo-js/ztree-demo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Wing-Web-Repository.iws" />
@@ -74,12 +102,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Demo-handlebars.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Demo-handlebars.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/Demo-js/Demo-handlebars.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.238698">
+            <state vertical-scroll-proportion="-4.2580647">
               <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ztree-demo.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/Demo-js/ztree-demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.517179">
+              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+              <folding>
+                <marker date="1471595597969" expanded="true" signature="4413:4424" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,6 +143,7 @@
         <option value="$PROJECT_DIR$/views/Demo-js/Demo-JSON.html" />
         <option value="$PROJECT_DIR$/views/Demo-js/Demo-argument.html" />
         <option value="$PROJECT_DIR$/views/Demo-js/Demo-handlebars.html" />
+        <option value="$PROJECT_DIR$/views/Demo-js/ztree-demo.html" />
       </list>
     </option>
   </component>
@@ -208,10 +249,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\GitHub\Wing-Web-Repository\views\Demo-js" />
+      <recent name="F:\GitHub\Wing-Web-Repository\plugins" />
       <recent name="F:\GitHub\Wing-Web-Repository\plugins\jquery" />
       <recent name="F:\GitHub\Wing-Web-Repository\styles\Demo-js" />
       <recent name="F:\GitHub\Wing-Web-Repository\styles" />
-      <recent name="F:\GitHub\Wing-Web-Repository\plugins" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\GitHub\Wing-Web-Repository\styles\common" />
@@ -292,7 +333,13 @@
       <option name="project" value="LOCAL" />
       <updated>1471593313977</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="测试说明文件">
+      <created>1471595283386</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1471595283386</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -491,11 +538,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/zTree/js/jquery-1.4.4.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/Demo-js/Demo-handlebars.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.238698">
+        <state vertical-scroll-proportion="-4.2580647">
           <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Demo-js/ztree-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.517179">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <marker date="1471595597969" expanded="true" signature="4413:4424" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
