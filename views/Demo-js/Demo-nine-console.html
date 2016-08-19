@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>who are you?</div>
+</body>
+<script type="text/javascript">
+    console.log("hello");
+    console.error("error");
+    console.info("message");
+    console.warn("warning");
+    console.log("======================================================================================================================================");
+    console.log("console支持printf站位符，支持的站位符有 字符（%s），整数（%d or %i），浮点数（%f），对象（%o）");
+    console.log("%d年%d月%d日",2016,8,16);
+    console.log("======================================================================================================================================");
+    console.group("第一组");
+    console.log("第一组第一条。。。");
+    console.log("第一组第二条。。。");
+    console.groupEnd();
+    console.group("第二组");
+    console.log("第二组第一条。。。");
+    console.log("第二组第二条。。。");
+    console.groupEnd();
+    console.log("======================================================================================================================================");
+    var wing={};
+    wing.name="wing";
+    wing.sex="♂";
+    wing.year=21;
+    console.log(wing);
+    console.dir(wing);
+    console.log("======================================================================================================================================");
+    console.dirxml($("div"));
+    console.log("======================================================================================================================================");
+    console.assert(1);
+    console.assert(1==2);
+    console.log("======================================================================================================================================");
+    console.log("console.trace()用来追踪函数的调用轨迹     函数是如何调用的，在其中加入console.trace()就可以");
+    function add(a,b){
+        console.trace();
+        return a+b;
+    }
+    function add1(a,b){
+        console.trace();
+        return add(a,b);
+    }
+    function add2(a,b){
+        console.trace();
+        return add1(a,b);
+    }
+    add2(1,2);
+    console.log("======================================================================================================================================");
+    console.log("console.time()和console.timeEnd()，用来显示代码的时间");
+    console.time("for循环执行时间");
+    for(var i=0;i<1000;i++){
+        1+1;
+    }
+    console.timeEnd("for循环执行时间");
+    console.log("======================================================================================================================================");
+    console.log("console.profile(),性能分析，找出瓶颈所在");
+    function add4(a,b){
+        for(var i=0;i<10000;i++){
+            a=a+b;
+        }
+        return a;
+    }
+    function add5(a,b){
+        return add4(a,b);
+    }
+    console.profile("add函数性能测试");
+    add5(1,1);
+    console.profileEnd();
+
+</script>
+</html>

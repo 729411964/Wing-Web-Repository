@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="../../plugins/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var text = [
+            [
+                {checkde: true, totalNum: 123, totalPrice: 3456},
+                {checked: false, num: 234},
+                {checked: false, num: 234},
+                {checked: false, num: 234},
+                {checked: false, num: 234}
+            ],
+            [
+                {checkde: true, totalNum: 123, totalPrice: 3456},
+                {checked: false, num: 234},
+                {checked: false, num: 234},
+                {checked: false, num: 234},
+                {checked: false, num: 234}
+            ],
+            [
+                {checkde: true, totalNum: 123, totalPrice: 3456},
+                {checked: false, num: 234},
+                {checked: false, num: 234},
+                {checked: false, num: 234},
+                {checked: false, num: 234}
+            ],
+            [
+                {checkde: true, totalNum: 123, totalPrice: 3456},
+                {checked: false, num: 234},
+                {checked: false, num: 234},
+                {checked: false, num: 234},
+                {checked: false, num: 234}
+            ]
+        ];
+        var str = JSON.stringify(text);
+        localStorage.text=str;
+        console.log(typeof JSON.parse(localStorage.text));
+    })
+</script>
+</body>
+</html>

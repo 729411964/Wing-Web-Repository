@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    var Module =function(){   //构造函数
+        this.init();
+    };
+
+    Module.prototype.init=function(){  //初始化
+        this.fetchData(function(){
+            //do something
+        })
+    };
+    Module.prototype.fetchData=function(cb){ // 获取数据
+        var self=this;
+        $.ajax({}).done(function(data){
+            self.renderData(data);
+        }).fail(function(){
+            self.fetchDataFailed();
+        }).always(function(){
+            cb&&cb();
+        });
+    };
+    Module.prototype.renderData=function(data){ //渲染数据
+        data=this.resolveData(data);
+        //do something
+    };
+    Module.prototype.resolveData=function(data){//处理数据
+        //do something
+    };
+    Module.prototype.fetchDataFailed=function(){//请求失败
+        //do something
+    }
+</script>
+</html>

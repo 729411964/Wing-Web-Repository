@@ -1,0 +1,76 @@
+@charset "UTF-8";
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1;
+    font-family: Arial, "微软雅黑";
+    color: #666;
+    overflow-y: scroll;
+}
+
+/*公共样式*/
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.hide{
+    display: none;
+}
+
+label.required:before {
+    margin-right: 2px;
+    content: "*";
+    color: #ff0000;
+}
+
+.inner {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/*重置样式*/
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+input[type="button"], input[type="submit"], button {
+    border: 0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*输入框提示与颜色*/
+input::-webkit-input-placeholder,input:-moz-placeholder,input::-moz-placeholder,input:-ms-input-placeholder{
+    color: #b2b2b2;
+}
+/*表格内容居左居右*/
+.datatable .text-left{
+    text-align: left;
+}
+.datatable .text-right {
+    text-align: right;
+}
+/*强制表格内容换行*/
+.datatable td{
+    word-break : break-all;
+}
+/*不足一页底部固定*/
+.copyright-fixed{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+}

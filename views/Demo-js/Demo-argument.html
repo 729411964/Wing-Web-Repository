@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量引用</title>
+</head>
+<body>
+<script type="text/javascript">
+function student(a ,b){
+    return a+b;
+}
+function student(a){
+//        return a;
+        var b=arguments[1];
+    console.log("参数个数为："+arguments.length);
+    console.log(student.toString());
+        return a+b;
+    }
+  console.log(student(3,4)) ;
+</script>
+</body>
+</html>

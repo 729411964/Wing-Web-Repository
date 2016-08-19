@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>报价表格</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../plugins/reset/reset.css">
+    <link rel="stylesheet" href="../../styles/common/common.css">
+    <link rel="stylesheet" href="../../styles/Demo-js/Demo-table-table.css">
+</head>
+<body>
+<table class="datatable">
+    <thead>
+    <tr>
+        <th class="xuhao">序号</th>
+        <th class="bianma">商品编码</th>
+        <th class="mingcheng">商品名称</th>
+        <th class="xinghao">规格型号</th>
+        <th class="paihao">牌号</th>
+        <th class="biaozhun">技术标准</th>
+        <th class="pinpai">品牌/制造商</th>
+        <th class="price">标杆价格（元）</th>
+        <th class="num">数量</th>
+        <th class="unit">单位</th>
+        <th class="beizhu">备注</th>
+        <th class="operation">操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>12</td>
+        <td>12</td>
+        <td>wing1</td>
+        <td>IUE4Q</td>
+        <td>品牌名称1</td>
+        <td>IUE4Q</td>
+        <td>品牌名称</td>
+        <td>345.00</td>
+        <td>400</td>
+        <td>吨</td>
+        <td>这里是备注</td>
+        <td class="operation">新增报价项</td>
+
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>1234</td>
+        <td>wing2</td>
+        <td>IUE4Q</td>
+        <td>品牌名称2</td>
+        <td>IUE4Q</td>
+        <td>品牌名称</td>
+        <td>345.00</td>
+        <td>400</td>
+        <td>吨</td>
+        <td>这里是备注</td>
+        <td class="operation">新增报价项</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>1234</td>
+        <td>wing3</td>
+        <td>IUE4Q</td>
+        <td>品牌名称3</td>
+        <td>IUE4Q</td>
+        <td>品牌名称</td>
+        <td>345.00</td>
+        <td>400</td>
+        <td>吨</td>
+        <td>这里是备注</td>
+        <td class="operation">新增报价项</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>1234</td>
+        <td>wing4</td>
+        <td>IUE4Q</td>
+        <td>品牌名称4</td>
+        <td>IUE4Q</td>
+        <td>品牌名称</td>
+        <td>345.00</td>
+        <td>400</td>
+        <td>吨</td>
+        <td>这里是备注</td>
+        <td class="operation">新增报价项</td>
+    </tr>
+    <tr>
+        <td>1234</td>
+        <td>1234</td>
+        <td>wing5</td>
+        <td>IUE4Q</td>
+        <td>品牌名称3</td>
+        <td>IUE4Q</td>
+        <td>品牌名称</td>
+        <td>345.00</td>
+        <td>400</td>
+        <td>吨</td>
+        <td>这里是备注</td>
+        <td class="operation">新增报价项</td>
+    </tr>
+
+    </tbody>
+</table>
+<div class="total">合计金额：15000000元</div>
+
+<div class="table-modal">
+<div class="copy-area clearfix">
+    <div class="content clearfix">
+        <div class="left">
+            <div class="left-title">询价商品信息</div>
+            <ul class="left-list">
+                <li class="clearfix">
+                    <div class="bianma left-item-title">商品编码：</div>
+                    <div class="left-item-content">12341234</div>
+                </li>
+                <li class="clearfix">
+                    <div class="mingcheng left-item-title">商品名称：</div>
+                    <div class="left-item-content">这里是商品的名称</div>
+                </li>
+                <li class="clearfix">
+                    <div class="xinghao left-item-title">规格型号：</div>
+                    <div class="left-item-content">IUE4Q</div>
+                </li>
+                <li class="clearfix">
+                    <div class="biaozhun left-item-title">技术标准：</div>
+                    <div class="left-item-content">IUE4Q IUE4Q IUE4Q IUE4Q IUE4Q IUE4Q IUE4Q</div>
+                </li>
+                <li class="clearfix">
+                    <div class="pinpai left-item-title">品牌/制造商：</div>
+                    <div class="left-item-content">品牌名称</div>
+                </li>
+                <li class="clearfix">
+                    <div class="price left-item-title">标杆价格（元）：</div>
+                    <div class="left-item-content">390</div>
+                </li>
+                <li class="clearfix">
+                    <div class="num left-item-title">数量：</div>
+                    <div class="left-item-content">400</div>
+                </li>
+                <li class="clearfix">
+                    <div class="beizhu left-item-title">询价备注：</div>
+                    <div class="left-item-content">这里是备注</div>
+                </li>
+            </ul>
+        </div>
+        <div class="center clearfix">
+            <input type="button" class="copy-btn" value="复制》">
+        </div>
+        <div class="right clearfix">
+            <div class="right-title">报价商品信息</div>
+            <ul class="right-list">
+                <li class="clearfix">
+                    <label class="dinghuohao right-list-title">订货号</label>
+                    <input class="input-item">
+                </li>
+                <li class="clearfix">
+                    <label class="mingcheng right-list-title">商品名称</label>
+                    <input class="input-item">
+                </li>
+                <li class="clearfix">
+                    <label class="xinghao right-list-title">规格型号</label>
+                    <input class="input-item">
+                </li>
+                <li class="clearfix">
+                    <label class="biaozhun right-list-title">技术标准</label>
+                    <textarea class="input-item"></textarea>
+                </li>
+                <li class="clearfix">
+                    <label class="pinpai right-list-title">品牌/制造商</label>
+                    <input class="input-item">
+                </li>
+                <li class="clearfix">
+                    <label class="price right-list-title">报价价格</label>
+                    <input class="input-item">
+                </li>
+                <li class="clearfix">
+                    <label class="num right-list-title">报价数量</label>
+                    <input class="input-item">
+                </li>
+                <li class="clearfix">
+                    <label class="baojiabeizhu right-list-title">报价备注</label>
+                    <textarea class="input-item"></textarea>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="btn-area">
+        <input class="enter" type="button" value="确认">
+        <input class="cancel" type="button" value="取消">
+    </div>
+</div>
+</div>
+</body>
+<script src="../../plugins/jquery/jquery-1.9.1.min.js"> </script>
+<script type="text/javascript">
+    $(function(){
+        (function($){
+            var beforeCopy={};
+            var rightList={};
+            var i=0;
+            var $th=$(".datatable>thead>tr>th");
+            var $leftLi=$(".left-list>li");
+            var $rightLi=$(".right-list>li");
+            for(i=0;i<$th.length;i++){
+                beforeCopy[$($th[i]).attr("class")]=""
+            }
+            for(i=0;i<$rightLi.length;i++){
+                rightList[$($rightLi[i]).children().first().attr("class").replace("right-list-title","").trim()]="";
+            }
+            var self;
+            var htmls = "<tr class='inner-area'>" +
+                    "<td colspan='12'>" +
+                    "<table class='inner-datatable datatable'>" +
+                    "<thead>" +
+                    "<tr>" +
+                    "<th class='dinghuohao'>订货号</th>" +
+                    "<th class='mingcheng'>商品名称</th>" +
+                    "<th class='xinghao'>规格型号</th>" +
+                    "<th class='biaozhun'>技术标准</th>" +
+                    "<th class='pinpai'>品牌/制造商</th>" +
+                    "<th class='price'>报价价格（元）</th>" +
+                    "<th class='num'>报价数量</th>" +
+                    "<th class='total-price'>报价总金额</th>" +
+                    "<th class='baojiabeizhu'>报价备注</th>" +
+                    "<th>操作</th>" +
+                    "</tr>" +
+                    "</thead>" +
+                    "<tbody>" +
+                    "</tbody>" +
+                    "</table>" +
+                    "</td>" +
+                    "</tr>";
+            var childHtml="<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>删除，xxx</td></tr>"
+
+            $(".operation").click(function(){
+                var index=0;
+                $(".table-modal").show();
+                self=$(this).parent();
+                $tdf=self.children();
+                for(i in beforeCopy){    //将最外的表格中的数据交给beforeCopy对象
+                    beforeCopy[i]=$($tdf[index]).text();
+                    index++
+                }
+                for(index=0;index<$leftLi.length;index++){  //将数据扔到模态框左侧。
+                    var className=$($leftLi[index]).children().first().attr("class").replace("left-item-title","").trim();
+                    for(m in beforeCopy){
+                        if(className===m){
+                            $($leftLi[index]).children(".left-item-content").text(beforeCopy[m]);
+                            break;
+                        }
+                    }
+                }
+            });
+            $(".enter").click(function(){
+                $(".table-modal").hide();
+                var index=0;
+                var i;
+                for(i in rightList){
+                    rightList[i]=$($rightLi[index]).children(".input-item").val();
+                    index++;
+                }
+                rightList["total-price"]=rightList["price"]*rightList["num"];
+                console.log(JSON.stringify(rightList));
+                if(!self.next().hasClass("inner-area")){
+                    self.after(htmls);
+                }
+                   self.next().find("tbody").append(childHtml);
+                    var $inTh=self.next().find("thead th");
+                    var $inTd=self.next().find("tbody tr").last().children();
+                    for(index=0;index<$inTh.length;index++){
+                        var className=$($inTh[index]).attr("class");
+                        for(i in rightList ){
+                            if(i==className){
+                                console.log(i+"====="+className)
+                                $($inTd[index]).text(rightList[i]);
+                                break;
+                            }
+                        }
+                    }
+
+
+
+            });
+            $(".copy-btn").click(function(){
+                var index=0;
+                for(i in rightList ){  //将左边的数据扔到右边
+                    for(m in beforeCopy){
+                        if(i===m){
+                            $($rightLi[index]).children(".input-item").val(beforeCopy[m]);
+                            break;
+
+                        }
+                    }
+                    index++;
+                }
+            });
+            $(".cancel").click(function(){
+                $(".table-modal").hide();
+            });
+
+        })(jQuery);
+
+    })
+</script>
+</html>
