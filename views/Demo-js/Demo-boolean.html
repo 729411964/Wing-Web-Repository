@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    console.log("任何JS的值都可以转化为布尔值，一下这些值会转化为false");
+    console.log("undefined"+" null"+" 0"+" -0"+" NaN"+" 空字符串");
+    console.log("已上六个值被称为假值");
+    console.log("====================================================================================");
+    if(!undefined){
+        console.log("undefined转化为false");
+    }
+    if(!null){
+        console.log("null转化为false");
+    }
+    if(!0){
+        console.log("0转化为false");
+    }
+    if(!-0){
+        console.log("-0转化为false");
+    }
+    if(!NaN){
+        console.log("NaN转化为false");
+    }
+    if(!""){
+        console.log("空字符串转化为false");
+    }
+    console.log("====================================================================================");
+    if("false"){
+        console.log("flase字符串没有转化为false");
+    }
+    console.log("====================================================================================");
+    console.log("NaN 它与任何值都不相等，包括自身，所以 当且仅有NaN!=NaN时才会返回true，或者使用isNaN()函数");
+    if(NaN!=NaN){
+        console.log("当且仅有NaN!=NaN时才会返回true");
+    }
+    if(isNaN(NaN)) {
+        console.log("isNaN(NaN)会返回true");
+    }
+    console.log("====================================================================================");
+    console.log("undefined 与null");
+    console.log("null是js的关键字，undefined是js预定义的只读的全局变量 ； undefined==null返回true，undefined===null返回false");
+    if(null==undefined){
+        console.log("undefined==null返回true");
+    }
+    if(!(null===undefined)){
+        console.log("undefined===null返回false");
+    }
+</script>
+</body>
+</html>
