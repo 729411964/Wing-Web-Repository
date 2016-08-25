@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>德玛西亚</div>
+</body>
+<script type="text/javascript">
+    (function() {
+        var _jQuery = window.jQuery,
+                _$ = window.$;
+        var version = "0.0.1",
+                jQuery = function(selector) {
+                    return new jQuery.fn.init(selector)  //构造函数已经变成了 jQuery.fn.init ，而其原型并非指向 jQuery 的原型，这导致 JQ 实例无法顺其原型链爬取到 jQuery.prototype。
+                };
+
+        jQuery.fn = jQuery.prototype = {
+            jquery: version,
+            constructor: jQuery
+        };
+
+        var init = jQuery.fn.init = function( selector, context, root ) {
+            if ( !selector ) {
+                return;
+            } else {
+                var elem = document.querySelector( selector );
+                if ( elem ) {
+                    this[0] = elem;
+                    this.length = 1;
+                }
+            }
+        };
+
+        init.prototype = jQuery.fn;  //把 jQuery.fn.init 的原型指向 jQuery 的原型（jQuery.prototype / jQuery.fn）即可：
+
+        jQuery.extend = jQuery.fn.extend = function(){
+            console.log(this)
+        };
+
+        window.$ = window.jQuery = jQuery;
+    })();
+    var $div = $('div');  //<div></div>
+    console.log($div);
+    console.log($div.jquery);  //0.0.1
+    console.log($div.constructor);
+</script>
+</html>
