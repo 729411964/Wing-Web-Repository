@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    console.log("for-in循环应该用在非数组对象的遍历上，使用for-in进行循环也被称为“枚举”。从技术上将，你可以使用for-in循环数组（因为JavaScript中数组也是对象），但这是不推荐的。因为如果数组对象已被自定义的功能增强，就可能发生逻辑错误。另外，在for-in中，属性列表的顺序（序列）是不能保证的。所以最好数组使用正常的for循环，对象使用for-in循环。有个很重要的hasOwnProperty()方法，当遍历对象属性的时候可以过滤掉从原型链上下来的属性。")
+    var test={
+        one:"123",
+        two:"234",
+        three:"456"
+    };
+    Object.prototype.four=function(){};
+    console.dir(test);
+    var i=0;
+    for(i in test){
+        console.log(i+":"+test[i]);
+    }
+    for(i in test){
+        if(test.hasOwnProperty(i)){
+            console.log(i+":"+test[i]);
+        }
+    }
+    console.log("========================================================================================================");
+    var test2={
+    };
+    for(i in test2){
+        console.log(i+":"+test2[i]);
+    }
+    console.log("========================================================================================================");
+
+    var test3=function(){};
+    test3.one="1";
+    test3.two="2";
+    test3.three="3";
+    test3.prototype.five="5";
+    console.log(test3.prototype.five);
+    for(i in test3){
+        console.log(i+":"+test3[i]);
+    }
+    console.log("========================================================================================================");
+    var test4=new test3();
+    for(i in test4){
+        console.log(i+":"+test4[i]);
+    }
+
+</script>
+</html>
